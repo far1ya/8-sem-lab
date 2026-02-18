@@ -1,0 +1,14 @@
+import numpy as np
+
+# Create a NumPy array
+arr = np.array([10, 20, 30, 40, 50, 60])
+
+# Indexing
+print("Element at index 0:", arr[0])
+print("Element at index 3:", arr[3])
+print("Last element:", arr[-1])
+
+# Slicing
+print("Elements from index 1 to 4:", arr[1:5])
+print("First three elements:", arr[:3])
+print("Elements from index 3 to end:", arr[3:])
