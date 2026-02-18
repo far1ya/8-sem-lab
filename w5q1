@@ -1,0 +1,29 @@
+import numpy as np
+
+# Create two NumPy arrays
+a = np.array([10, 20, 30])
+b = np.array([5, 10, 15])
+
+# Addition
+add = a + b
+
+# Subtraction
+sub = a - b
+
+# Multiplication
+mul = a * b
+
+# Division
+div = a / b
+
+# Modulus
+mod = a % b
+
+# Display results
+print("Array a:", a)
+print("Array b:", b)
+print("Addition:", add)
+print("Subtraction:", sub)
+print("Multiplication:", mul)
+print("Division:", div)
+print("Modulus:", mod)
