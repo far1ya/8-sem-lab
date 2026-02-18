@@ -1,0 +1,13 @@
+# Create a dictionary of students and marks
+students = {
+    "Ayesha": 82,
+    "Rahul": 68,
+    "Zoya": 91,
+    "Arjun": 74,
+    "Neha": 88
+}
+
+# Display students scoring above 75
+for name, marks in students.items():
+    if marks > 75:
+        print(name, ":", marks)
