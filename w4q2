@@ -1,0 +1,10 @@
+# Create a list of numbers
+numbers = [45, 12, 78, 34, 23]
+
+# Sort the list in ascending order
+numbers.sort()
+print("Ascending order:", numbers)
+
+# Sort the list in descending order
+numbers.sort(reverse=True)
+print("Descending order:", numbers)
