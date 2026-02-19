@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>All Input Types</title>
+</head>
+<body>
+<h2>HTML Input Types Form</h2>
+<form>
+Text: <input type="text"><br><br>
+Password: <input type="password"><br><br>
+Email: <input type="email"><br><br>
+Number: <input type="number"><br><br>
+Date: <input type="date"><br><br>
+Time: <input type="time"><br><br>
+Radio: 
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female <br><br>
+Checkbox:
+<input type="checkbox"> C
+<input type="checkbox"> Java
+<input type="checkbox"> Python <br><br>
+File: <input type="file"><br><br>
+Color: <input type="color"><br><br>
+Range: <input type="range"><br><br>
+Submit: <input type="submit">
+Reset: <input type="reset">
+</form>
+</body>
+</html>
