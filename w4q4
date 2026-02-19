@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* First row */
+        .top {
+            height: 50vh;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Second row container */
+        .bottom {
+            height: 50vh;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            width: 50%;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <h2>Top Frame</h2>
+    </div>
+
+    <div class="bottom">
+        <div class="left">
+            <h2>Bottom Left Frame</h2>
+        </div>
+
+        <div class="right">
+            <h2>Bottom Right Frame</h2>
+        </div>
+    </div>
+
+</body>
+</html>
