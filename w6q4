@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Page</title>
+    <script>
+        function showGreeting() {
+            // Ask the user if they want a greeting message
+            var response = confirm("Do you want to see a greeting message?");
+
+            if (response) {
+                // Display GIF
+                var img = document.createElement("img");
+                img.src = "Welcome.gif";
+                img.alt = "Welcome Image";
+                document.body.appendChild(img);
+
+                // Line break
+                document.body.appendChild(document.createElement("br"));
+                document.body.appendChild(document.createElement("br"));
+
+                // Display welcome message
+                var message = document.createElement("p");
+                message.innerHTML = "<b>Welcome to Department of Computer Science!</b>";
+                document.body.appendChild(message);
+            }
+        }
+    </script>
+</head>
+
+<body onload="showGreeting()">
+</body>
+</html>
