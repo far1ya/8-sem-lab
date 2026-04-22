@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Page 3</title>
+</head>
+<body>
+
+<h2>Personalized Welcome</h2>
+
+<p id="displayName"></p>
+
+<script>
+    // Retrieve name from URL
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("username");
+
+    document.getElementById("displayName").innerHTML =
+        "Hello, <b>" + name + "</b>! Welcome to ABC.COM.";
+</script>
+
+</body>
+</html>
