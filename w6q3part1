@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Page 1</title>
+</head>
+<body>
+
+<h2>Welcome to ABC.COM</h2>
+
+<form action="w6q3part2.html" method="get">
+    Enter Your Name:
+    <input type="text" name="username" required>
+    <br><br>
+    <input type="submit" value="Enter">
+</form>
+
+</body>
+</html>
