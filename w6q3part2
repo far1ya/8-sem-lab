@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC.COM - Page 2</title>
+</head>
+<body>
+
+<h2>Welcome to ABC.COM</h2>
+
+<p>
+ABC.COM is a leading platform providing quality services and 
+innovative solutions to our customers.
+</p>
+
+<form action="w6q3part3.html" method="get">
+    <!-- Hidden field to carry forward the name -->
+    <input type="hidden" name="username" value="">
+    
+    <input type="submit" value="Next">
+</form>
+
+<script>
+    // Get name from URL and store it in hidden field
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("username");
+    document.querySelector("input[name='username']").value = name;
+</script>
+
+</body>
+</html>
