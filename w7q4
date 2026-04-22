@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Day of Week</title>
+    <script>
+        function findDay() {
+            // Prompt user for date
+            let d = prompt("Enter a date between 1 and 31:");
+
+            // Create date object
+            let date = new Date();
+
+            // Set the entered date
+            date.setDate(d);
+
+            // Array of days
+            let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+            // Get day number
+            let day = date.getDay();
+
+            // Display result
+            alert("Day of the week is: " + days[day]);
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Find Day of the Week</h2>
+
+<button onclick="findDay()">Enter Date</button>
+
+</body>
+</html>
