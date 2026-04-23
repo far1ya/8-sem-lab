@@ -1,0 +1,49 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+# Models
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+
+# Metrics
+from sklearn.metrics import accuracy_score
+
+# Step 1: Create dataset
+data = {
+    'Hours_Studied': [1,2,3,4,5,6,7,8],
+    'Sleep_Hours': [8,7,7,6,6,5,5,4],
+    'Pass': [0,0,0,1,1,1,1,1]
+}
+
+df = pd.DataFrame(data)
+
+# Step 2: Split data
+X = df[['Hours_Studied', 'Sleep_Hours']]
+y = df['Pass']
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.25, random_state=42
+)
+
+# Step 3: Initialize models
+models = {
+    "Logistic Regression": LogisticRegression(),
+    "Decision Tree": DecisionTreeClassifier(),
+    "Random Forest": RandomForestClassifier()
+}
+
+# Step 4: Train, Predict, Compare
+results = {}
+
+for name, model in models.items():
+    model.fit(X_train, y_train)          # Train
+    y_pred = model.predict(X_test)       # Predict
+    acc = accuracy_score(y_test, y_pred) # Evaluate
+    
+    results[name] = acc
+
+# Step 5: Display results
+print("Model Comparison (Accuracy):")
+for model, score in results.items():
+    print(f"{model}: {score}")
